@@ -27,12 +27,12 @@ public class StockMovement {
     private Stock stock;
 
     @ManyToOne
-    @JoinColumn(name = "source_location_id")
-    private Location sourceLocation;
+    @JoinColumn(name = "location_id")
+    private Location location;
     
     @ManyToOne
-    @JoinColumn(name = "destination_location_id")
-    private Location destinationLocation;
+    @JoinColumn(name = "destination_id")
+    private Location destination;
     
     private int quantity;
     
